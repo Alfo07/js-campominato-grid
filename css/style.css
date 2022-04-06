@@ -1,0 +1,45 @@
+/* GENERAL */
+body{
+    font-family: 'BIZ UDGothic', sans-serif;;
+}
+
+/* HEADER */
+header{
+    height: 70px;
+}
+
+header img{
+    height: 50px;
+}
+
+#game-name{
+    vertical-align: middle;
+}
+
+select{
+    margin-right: 10px;
+}
+
+/* MAIN */
+main{
+    height: calc(100vh - 120px);
+    min-height: 500px;
+    background-color: #12363a;
+    overflow-y: auto;
+}
+
+.grid{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 1px solid black;
+}
+
+/* FOOTER */
+footer{
+    height: 50px;
+}
