@@ -17,45 +17,40 @@
 
     <!-- HEADER -->
     <header>
-        <div class="container d-flex justify-content-between align-items-center h-100">
-            <div id="game-name" class="d-flex">
+        <div class="hContainer">
+            <div class="hLeft">
                 <img src="./img/BooleanLogo.png" alt="LogoBoolean">
-                <h1 class="text-uppercase mx-3">Campo Minato</h1>
+                <h1>Campo minato</h1>
             </div>
-            <div class="choose-level">
-                <label for="level">
-                    Difficolt&aacute;:
-                    <select name="level-difficulty" id="level-difficulty">
-                        <option value="1" selected>Easy</option>
-                        <option value="2">Hard</option>
-                        <option value="3">Crazy</option>
-                    </select>
-                </label>
-                <label for="Start">
-                    <button type="button" class="btn btn-dark">Start</button>
-                </label>
+            <div class="hRight">    
+                <span>Difficolt&aacute;:</span>
+                <select id="level-difficulty">
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
+                </select>
+                <button type="button" id="start">Start!</button>
             </div>
-        </div>  
+        </div>
     </header>
     <!-- /HEADER -->
 
     <!-- MAIN -->
     <main>
-        <div class="container d-flex justify-content-center align-items-center h-100 text-center"
-        id="app"">
-            <h2 class="text-light">Seleziona il livello di difficolt&aacute; e genera la griglia</h2>
+        <div class="mContainer">
+            <h2>Seleziona il livello di difficoltà e genera la griglia</h2>
         </div>
     </main>
     <!-- /MAIN -->
 
     <!-- FOOTER -->
     <footer>
-        <div class="container d-flex align-items-center h-100">
-            <p>Made with &hearts; by <a href="http://boolean.careers">Boolean</a></p> 
+        <div class="fContainer">
+            <span>Made with &hearts; by Boolean</span>
         </div>
     </footer>
     <!-- /FOOTER -->
 
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

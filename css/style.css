@@ -1,45 +1,99 @@
 /* GENERAL */
-body{
-    font-family: 'BIZ UDGothic', sans-serif;;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pink{
+    background-color: #f4ac9a;
 }
 
 /* HEADER */
-header{
-    height: 70px;
+.hContainer{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-header img{
-    height: 50px;
+.hLeft, .hRight{
+    display: flex;
+    align-items: center;
 }
 
-#game-name{
-    vertical-align: middle;
+.hLeft h1{
+    height: 2vw;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
-select{
-    margin-right: 10px;
+.hLeft img{
+    height: 60px;
+}
+
+.hRight{
+    font-size: 20px;
+}
+
+.hRight #start{
+    background-color: #156d8f;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 0;
+}
+
+.hRight #level-difficulty{
+    margin: 0 10px;
 }
 
 /* MAIN */
 main{
-    height: calc(100vh - 120px);
-    min-height: 500px;
-    background-color: #12363a;
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-color: #156d8f;
+    position: relative;
     overflow-y: auto;
 }
 
-.grid{
-    width: 500px;
-    height: 500px;
+.mContainer{  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+}
+
+.grid{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
 }
 
 .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
+    
 }
 
 /* FOOTER */
-footer{
-    height: 50px;
+.fContainer{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.fContainer span{
+    font-size: 20px;
 }
